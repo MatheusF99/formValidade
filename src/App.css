@@ -1,5 +1,26 @@
-.App {
-  text-align: center;
+.App  {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  width: 100vw;
+  height: 100vh;
+}
+
+form{
+  width: 50%;
+  height: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+input{
+  padding: 10px 0;
+  margin: 5px 0;
 }
 
 .App-logo {
@@ -21,7 +42,7 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: black;
 }
 
 .App-link {

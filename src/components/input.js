@@ -3,7 +3,7 @@ import { useField } from '@unform/core'
 
 // import { Container } from './styles';
 
-function Input( {name} ) {
+function Input( {name, ...rest} ) {
 
    const inputRef = useRef(null) 
   
@@ -18,7 +18,7 @@ function Input( {name} ) {
   }, [registerField,fieldName])
 
   return (
-      <input ref={inputRef} />
+      <input ref={inputRef} {...rest} />
   );
 }
 

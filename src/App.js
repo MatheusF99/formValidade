@@ -16,8 +16,10 @@ function App() {
 
 			<Form onSubmit={handleSubmit}>
 				<Input name="email"/>
-				<Input name="name"/>
-				<Input name="password"/>
+				<Input type="email" name="name"/>
+				
+
+				<button type="submit">Enviar</button>
 			</Form>
 		</div>		
 	);
