@@ -18,7 +18,12 @@ function Input( {name, ...rest} ) {
   }, [registerField,fieldName])
 
   return (
-      <input defaultValue={defaultValue} ref={inputRef} {...rest} />
+      <div>
+        <input defaultValue={defaultValue} ref={inputRef} {...rest} />
+        {
+            error && <span style={{color: '#f45'}}>{error}</span>
+        }
+      </div>
   );
 }
 

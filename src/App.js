@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import "./App.css";
 
 import { Form } from '@unform/web'
@@ -12,8 +12,16 @@ const inicialData ={
 
 function App() {
 
+	const formRef = useRef(null)
+
 	function handleSubmit(data) {
 		console.log(data);
+
+		if (data.name === "") {
+			formRef.current.setError({
+				name: 'o nome é obligatorio'
+			})
+		}
 	}
 
 	return (
