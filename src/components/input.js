@@ -18,7 +18,7 @@ function Input( {name, ...rest} ) {
   }, [registerField,fieldName])
 
   return (
-      <input ref={inputRef} {...rest} />
+      <input defaultValue={defaultValue} ref={inputRef} {...rest} />
   );
 }
 
