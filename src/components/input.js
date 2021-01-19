@@ -19,9 +19,14 @@ function Input( {name, ...rest} ) {
 
   return (
       <div>
-        <input defaultValue={defaultValue} ref={inputRef} {...rest} />
+        <input ref={inputRef} defaultValue={defaultValue} {...rest} />
         {
-            error && <span style={{color: '#f45'}}>{error}</span>
+            error && <span style={
+                                    {color: '#f45', 
+                                    display: 'flex',
+                                    flexDirection: 'column'}
+                                }
+                     >{error}</span>
         }
       </div>
   );
