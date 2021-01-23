@@ -18,9 +18,8 @@ function Input( {name, ...rest} ) {
   }, [registerField,fieldName])
 
   return (
-      <div>
+    <>   
         <input ref={inputRef} defaultValue={defaultValue} {...rest} />
-        <span className="placeholder">insert ID</span>
         {
             error && <span style={
                                     {color: '#f45', 
@@ -29,7 +28,7 @@ function Input( {name, ...rest} ) {
                                 }
                      >{error}</span>
         }
-      </div>
+    </>
   );
 }
 

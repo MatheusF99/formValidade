@@ -54,17 +54,18 @@ function App() {
 		<div className="App">
 			<h1>Hellow world</h1>
 
-			<Form ref={formRef} onSubmit={handleSubmit}>
-				<Input  className="custom-field" name="name"/>
-				<span className="placeholder">insert ID</span>
-				<Input className="custom-field" name="email"/>
+			<Form ref={formRef} className="custom-field" onSubmit={handleSubmit}>
+				
+				<Input name="name" required/>
+				<span class="placeholder">insert ID</span>
+				<Input name="email" required/>
 
 				<Scope path="endereço">
-					<Input className="custom-field" name="rua"/>
-					<Input className="custom-field" name="bairro"/>
-					<Input className="custom-field" name="numero"/>
-					<Input className="custom-field" name="cidade"/>
-					<Input className="custom-field" name="estado"/>
+					<Input name="rua" required />
+					<Input name="bairro" required/>
+					<Input name="numero" required/>
+					<Input name="cidade" required/>
+					<Input name="estado" required/>
 				</Scope>
 
 				<button type="submit">Enviar</button>
