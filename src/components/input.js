@@ -20,6 +20,7 @@ function Input( {name, ...rest} ) {
   return (
       <div>
         <input ref={inputRef} defaultValue={defaultValue} {...rest} />
+        <span className="placeholder">insert ID</span>
         {
             error && <span style={
                                     {color: '#f45', 
