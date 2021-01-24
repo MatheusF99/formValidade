@@ -4,7 +4,11 @@ import ''
 
 function Button() {
   
-  return <div />;
+  return (
+      <div>
+        <button>enviar</button>
+      </div>
+  );
 }
 
 export default Button;

@@ -6,6 +6,7 @@ import { Scope } from '@unform/core'
 import Input from './components/input';
 
 import * as Yup from 'yup'
+import Button from './components/button';
 
 
 // const inicialData ={
@@ -73,7 +74,7 @@ function App() {
 					<span class="placeholder">Estado</span><br/>
 				</Scope> */}
 
-				<button type="submit">Enviar</button>
+				<Button />
 			</Form>
 		</div>		
 	);
