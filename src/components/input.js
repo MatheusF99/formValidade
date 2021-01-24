@@ -20,8 +20,9 @@ function Input( {name, ...rest} ) {
   }, [registerField,fieldName])
 
   return (
-    <div>   
-        <input ref={inputRef} defaultValue={defaultValue} {...rest} placeholder={fieldName}/>
+    <div className='form-div'>   
+        <input className='form-input' ref={inputRef} defaultValue={defaultValue} {...rest}/>
+        <label className='form-label'>{fieldName}</label>
         {
             error && <span style={
                                     {color: '#f45', 
