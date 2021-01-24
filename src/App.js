@@ -52,12 +52,11 @@ function App() {
 
 	return (
 		<div className="App">
-			<h1 className='form-title'>Login</h1>
 
 			<Form ref={formRef} className="custom-field" onSubmit={handleSubmit}>
-				
-				<Input name="name" required/>
-				<Input name="email" required/>				
+				<h1 className='form-title'>Login</h1>
+				<Input name="name"/>
+				<Input name="email"/>				
 				
 				{/*
 				<Scope path="endereço">
@@ -73,7 +72,7 @@ function App() {
 					<span class="placeholder">Estado</span><br/>
 				</Scope> */}
 
-				<button className='form-button' type='submit'>Enviar</button>
+				<button className='form-button' type='submit'>Sign In</button>
 			</Form>
 		</div>		
 	);

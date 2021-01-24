@@ -21,7 +21,7 @@ function Input( {name, ...rest} ) {
 
   return (
     <div className='form-div'>   
-        <input className='form-input' ref={inputRef} defaultValue={defaultValue} {...rest}/>
+        <input className='form-input' ref={inputRef} {...rest}/>
         <label className='form-label'>{fieldName}</label>
         {
             error && <span style={
