@@ -52,7 +52,7 @@ function App() {
 
 	return (
 		<div className="App">
-			<h1>Login</h1>
+			<h1 className='form-title'>Login</h1>
 
 			<Form ref={formRef} className="custom-field" onSubmit={handleSubmit}>
 				
