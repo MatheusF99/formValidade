@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import { useField } from '@unform/core'
 
-import './input.css'
+import './styles/input.css'
 
 // import { Container } from './styles';
 

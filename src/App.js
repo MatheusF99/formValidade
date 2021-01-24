@@ -1,5 +1,5 @@
 import React, { useRef } from 'react'
-import "./App.css";
+import "./styles/App.css";
 
 import { Form } from '@unform/web'
 import { Scope } from '@unform/core'
