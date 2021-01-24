@@ -47,14 +47,14 @@
     z-index: 10;
 }
 
-/* .form-input:not(:placeholder-shown).form-input:not(:focus)+ .form-label{
+.form-input:not(:placeholder-shown).form-input:not(:focus)+ .form-label{
     top: -.5rem;
     left: .8rem;
 
     font-size: var(--small-font-size);
     font-weight: 500;
     z-index: 10;
-} */
+}
 
 .form-input:focus{
     border: 1.5px solid var(--first-color);

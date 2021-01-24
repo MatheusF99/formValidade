@@ -55,8 +55,8 @@ function App() {
 
 			<Form ref={formRef} className="custom-field" onSubmit={handleSubmit}>
 				<h1 className='form-title'>Login</h1>
-				<Input name="name"/>
-				<Input name="email"/>				
+				<Input type='text' placeholder=" " name="name"/>
+				<Input type='password' placeholder=" " name="email"/>				
 				
 				{/*
 				<Scope path="endereço">
