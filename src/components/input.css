@@ -18,8 +18,12 @@ input{
     width: 250px;
 
 }
-.custom-field input:focus + .placeholder{
-  top: 2px;
-  font-size: 10px;
-  color: #282c34;
+
+input::placeholder{
+  color: #aaa;
+  transition: color .3s ease;
+}
+
+input:focus::placeholder{
+  color: transparent;
 }

@@ -33,17 +33,7 @@ form{
 
 }
 
-.custom-field .placeholder{
-  position: absolute;
-  left: 12px;
-  color: #aaa;
-}
 
-.custom-field input:focus + .placeholder{
-  top: 2px;
-  font-size: 10px;
-  color: #282c34;
-}
 
 
 /* --------------------------------------------------- */

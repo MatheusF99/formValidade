@@ -52,15 +52,14 @@ function App() {
 
 	return (
 		<div className="App">
-			<h1>Hellow world</h1>
+			<h1>Login</h1>
 
 			<Form ref={formRef} className="custom-field" onSubmit={handleSubmit}>
 				
 				<Input name="name" required/>
-				<span class="placeholder">Name</span><br/>
-				<Input name="email" required/>
-				<span class="placeholder">E-mail</span><br/>
-
+				<Input name="email" required/>				
+				
+				{/*
 				<Scope path="endereço">
 					<Input name="rua" required />
 					<span class="placeholder">Rua</span><br/>
@@ -72,7 +71,7 @@ function App() {
 					<span class="placeholder">Cidade</span><br/>
 					<Input name="estado" required/>
 					<span class="placeholder">Estado</span><br/>
-				</Scope>
+				</Scope> */}
 
 				<button type="submit">Enviar</button>
 			</Form>

@@ -15,13 +15,13 @@ function Input( {name, ...rest} ) {
       registerField({
           name: fieldName,
           ref: inputRef.current,
-          path: 'value'
+          path: 'value',
       })
   }, [registerField,fieldName])
 
   return (
-    <>   
-        <input ref={inputRef} defaultValue={defaultValue} {...rest} />
+    <div>   
+        <input ref={inputRef} defaultValue={defaultValue} {...rest} placeholder={fieldName}/>
         {
             error && <span style={
                                     {color: '#f45', 
@@ -30,7 +30,7 @@ function Input( {name, ...rest} ) {
                                 }
                      >{error}</span>
         }
-    </>
+    </div>
   );
 }
 
