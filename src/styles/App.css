@@ -1,4 +1,13 @@
 .App  {
+
+}
+
+.light-mode{
+  background: #fff;
+  color: #333;
+}
+
+.App .light-mode{
   position: relative;
   display: flex;
   justify-content: center;
@@ -7,14 +16,19 @@
 
   width: 100vw;
   height: 100vh;
-}
 
-.light-mode{
-  background: #fff;
-  color: #333;
+  background: #FBFCFE;
 }
+.App .dark-mode{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 
-.dark-mode{
+  width: 100vw;
+  height: 100vh;
+
   background: #282a36;
 }
 
@@ -120,4 +134,24 @@ form{
   to {
     transform: rotate(360deg);
   }
+}
+
+
+/* input checkbox */
+
+input[type="checkbox"]{
+  width: 40px;
+  height: 10px;
+  -webkit-appearance: none;
+  background: #c6c6c6;
+  outline: none;
+  border-radius: 20px;
+  transition: .5s ease;
+}
+
+/* input:checked[type="checkbox"]{
+  
+} */
+input:checked[type="checkbox"]{
+  
 }

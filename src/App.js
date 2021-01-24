@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import "./styles/App.css";
 
 import { Form } from '@unform/web'
@@ -50,30 +50,61 @@ function App() {
 		}
 	}
 
+	// dark-mode 
+	const [ darkMode, setDarkMode ] = React.useState(getInicialMode())
+
+	useEffect(()=>{
+		localStorage.setItem("dark", JSON.stringify(darkMode))
+	},[darkMode])
+
+	function getInicialMode(){
+		const savedMode = JSON.parse(localStorage.getItem('dark'))
+
+		return savedMode || false;
+	}
+
+
 	return (
-		<div className="App light-mode">
+		<div className="App">
+			<div className={darkMode? 'dark-mode': 'light-mode'}>
+				<Form ref={formRef} className="custom-field" onSubmit={handleSubmit}>
+					<h1 className='form-title'>Login</h1>
 
-			<Form ref={formRef} className="custom-field" onSubmit={handleSubmit}>
-				<h1 className='form-title'>Login</h1>
-				<Input type='email' placeholder=" " name="E-mail"/>
-				<Input type='password' placeholder=" " name="Password"/>				
-				
-				{/*
-				<Scope path="endereço">
-					<Input name="rua" required />
-					<span class="placeholder">Rua</span><br/>
-					<Input name="bairro" required/>
-					<span class="placeholder">Bairro</span><br/>
-					<Input name="numero" required/>
-					<span class="placeholder">Numero</span><br/>
-					<Input name="cidade" required/>
-					<span class="placeholder">Cidade</span><br/>
-					<Input name="estado" required/>
-					<span class="placeholder">Estado</span><br/>
-				</Scope> */}
+					
+					<div>
+						<span>☀️</span>
+						<span className="toggle">
+							<input 
+								checked={darkMode}
+								onChange={()=>setDarkMode(prevMode=>!prevMode)}
+								type="checkbox"
+								id="checkbox"
+							/>
+							<label htmlFor="checkbox"></label>
+						</span>
+						<span>🌙</span>
+					</div>
 
-				<button className='form-button' type='submit'>Sign In</button>
-			</Form>
+					<Input type='email' placeholder=" " name="E-mail"/>
+					<Input type='password' placeholder=" " name="Password"/>				
+					
+					{/*
+					<Scope path="endereço">
+						<Input name="rua" required />
+						<span class="placeholder">Rua</span><br/>
+						<Input name="bairro" required/>
+						<span class="placeholder">Bairro</span><br/>
+						<Input name="numero" required/>
+						<span class="placeholder">Numero</span><br/>
+						<Input name="cidade" required/>
+						<span class="placeholder">Cidade</span><br/>
+						<Input name="estado" required/>
+						<span class="placeholder">Estado</span><br/>
+					</Scope> */}
+
+					<button className='form-button' type='submit'>Sign In</button>
+				</Form>
+			</div>
 		</div>		
 	);
 }
