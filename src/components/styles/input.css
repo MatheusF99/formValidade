@@ -37,6 +37,7 @@
     transition: .3s;
 }
 
+
 .form-input:focus + .form-label{
     top: -.5rem;
     left: .8rem;
@@ -58,4 +59,22 @@
 
 .form-input:focus{
     border: 1.5px solid var(--first-color);
+}
+
+
+/* dark mode */
+.dark-mode .form-label{
+        
+    background-color: var(--dark-color);
+    color: var(--input-dark-color);
+
+}
+
+.dark-mode .form-input:focus + .form-label{
+
+    color: var(--border-dark-color);
+    
+}
+.dark-mode .form-input:focus{
+    border: 1.5px solid var(--border-dark-color);
 }

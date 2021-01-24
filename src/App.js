@@ -51,12 +51,12 @@ function App() {
 	}
 
 	return (
-		<div className="App">
+		<div className="App light-mode">
 
 			<Form ref={formRef} className="custom-field" onSubmit={handleSubmit}>
 				<h1 className='form-title'>Login</h1>
-				<Input type='text' placeholder=" " name="name"/>
-				<Input type='password' placeholder=" " name="email"/>				
+				<Input type='email' placeholder=" " name="E-mail"/>
+				<Input type='password' placeholder=" " name="Password"/>				
 				
 				{/*
 				<Scope path="endereço">

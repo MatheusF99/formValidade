@@ -1,8 +1,12 @@
 :root{
   --first-color: #1a73e8;
   --first-color-ligth: #1a73e8d3;
+  --dark-color: #44475a;
   --input-color: #80868b;
+  --input-dark-color: #f8f8f2;
   --border-color: #dadce0;
+  --border-dark-color: #f1fa8c;
+  --border-dark-color-second: #d1da77;
 
 
   --normal-font-size: 1rem;
@@ -13,8 +17,6 @@
 *, ::before, ::after{
   box-sizing: border-box;
 }
-
-
 
 body {
 

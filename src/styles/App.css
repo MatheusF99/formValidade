@@ -8,6 +8,22 @@
   width: 100vw;
   height: 100vh;
 }
+
+.light-mode{
+  background: #fff;
+  color: #333;
+}
+
+.dark-mode{
+  background: #282a36;
+}
+
+.dark-mode form{
+  background: var(--dark-color);
+  color: var(--input-dark-color);
+}
+
+
 /*
 form{
   width: 100%;
@@ -52,6 +68,20 @@ form{
 
 .form-button:hover{
   background-color: var(--first-color-ligth)
+}
+
+/* dark mode */
+
+.dark-mode .form-button{
+  
+  background-color: var(--border-dark-color);
+  color: #282a36;
+  
+}
+.dark-mode .form-button:hover{
+  
+  background-color: var(--border-dark-color-second);
+  
 }
 
 
