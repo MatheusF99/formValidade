@@ -57,15 +57,21 @@ function App() {
 			<Form ref={formRef} className="custom-field" onSubmit={handleSubmit}>
 				
 				<Input name="name" required/>
-				<span class="placeholder">insert ID</span>
+				<span class="placeholder">Name</span><br/>
 				<Input name="email" required/>
+				<span class="placeholder">E-mail</span><br/>
 
 				<Scope path="endereço">
 					<Input name="rua" required />
+					<span class="placeholder">Rua</span><br/>
 					<Input name="bairro" required/>
+					<span class="placeholder">Bairro</span><br/>
 					<Input name="numero" required/>
+					<span class="placeholder">Numero</span><br/>
 					<Input name="cidade" required/>
+					<span class="placeholder">Cidade</span><br/>
 					<Input name="estado" required/>
+					<span class="placeholder">Estado</span><br/>
 				</Scope>
 
 				<button type="submit">Enviar</button>

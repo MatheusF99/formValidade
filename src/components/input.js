@@ -1,6 +1,8 @@
 import React, { useEffect, useRef } from 'react';
 import { useField } from '@unform/core'
 
+import './input.css'
+
 // import { Container } from './styles';
 
 function Input( {name, ...rest} ) {
