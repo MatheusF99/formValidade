@@ -68,21 +68,24 @@ function App() {
 		<div className="App">
 			<div className={darkMode? 'dark-mode': 'light-mode'}>
 				<Form ref={formRef} className="custom-field" onSubmit={handleSubmit}>
-					<h1 className='form-title'>Login</h1>
+					
 
 					
-					<div>
-						<span>☀️</span>
-						<span className="toggle">
-							<input 
-								checked={darkMode}
-								onChange={()=>setDarkMode(prevMode=>!prevMode)}
-								type="checkbox"
-								id="checkbox"
-							/>
-							<label htmlFor="checkbox"></label>
-						</span>
-						<span>🌙</span>
+					<div className="form-title">
+						<h1>Login</h1>
+						<div className='form-toggle'>
+							<span className="form-icon">☀️</span>
+							<span className="toggle">
+								<input 
+									checked={darkMode}
+									onChange={()=>setDarkMode(prevMode=>!prevMode)}
+									type="checkbox"
+									id="checkbox"
+								/>
+								<label htmlFor="checkbox"></label>
+							</span>
+							<span className="form-icon">🌙</span>
+						</div>
 					</div>
 
 					<Input type='email' placeholder=" " name="E-mail"/>
