@@ -1,0 +1,145 @@
+.App .light-mode{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  width: 100vw;
+  height: 100vh;
+
+  background: #FBFCFE;
+}
+.App .dark-mode{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  width: 100vw;
+  height: 100vh;
+
+  background: #282a36;
+}
+
+.dark-mode form{
+  background: var(--dark-color);
+  color: var(--input-dark-color);
+}
+
+
+/*
+form{
+  width: 100%;
+  height: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+} */
+
+
+.custom-field{
+  width: 360px;
+  padding: 4rem 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 10px 25px rgba(92, 99, 106, .2);
+}
+
+.form-title{
+  margin-bottom: 3rem;
+
+  display: flex;
+
+}
+.form-title h1{
+  font: 400;
+
+  width: 50%;
+
+}
+
+.form-title .form-toggle{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 50%;
+  left: 0;
+
+  margin-top: 8px;
+}
+
+.form-icon{
+  margin-bottom: 5px;
+}
+
+.form-button{
+  display: block;
+
+  margin-left: auto;
+  padding: .75rem 2rem;
+  outline: none;
+
+  background-color: var(--first-color);
+  color: #fff;
+
+  font-size: var(--normal-font-size);
+  border-radius: .5rem;
+  cursor: pointer;
+  transition: .3s;
+
+  border: none;
+}
+
+.form-button:hover{
+  background-color: var(--first-color-ligth)
+}
+
+/* dark mode */
+
+.dark-mode .form-button{
+  
+  background-color: var(--border-dark-color);
+  color: #282a36;
+  
+}
+.dark-mode .form-button:hover{
+  
+  background-color: var(--border-dark-color-second);
+  
+}
+
+
+input[type="checkbox"]{
+  position: relative;
+  width: 40px;
+  height: 10px;
+  -webkit-appearance: none;
+  background: #c6c6c6;
+  outline: none;
+  border-radius: 20px;
+  transition: .5s ease;
+}
+
+/* input:checked[type="checkbox"]{
+  
+} */
+input[type="checkbox"]::before{
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  left: 0;
+  top: -5px;
+  background: #fff;
+  transform: scale(1.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+  transition: .5s;
+}
+
+input:checked[type="checkbox"]::before{
+  left: 19px;
+}
