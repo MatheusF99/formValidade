@@ -1,7 +1,9 @@
-.App{
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.container{
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #fff;
+  overflow: hidden;
 }
 
 /* --------------------------------------------------- */

@@ -13,7 +13,13 @@ function App() {
 
 	return (
 		<div className="App">
-			<LoginPage />
+			<div className="container">	
+				<div className="form-container">	
+					<div className="signIn-signUp">
+						<LoginPage />
+					</div>		
+				</div>		
+			</div>		
 		</div>		
 	);
 
