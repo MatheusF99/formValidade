@@ -1,26 +1,40 @@
-.App .light-mode{
+.login-page{
+  max-width: 1440px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.light-mode{
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  /* flex-direction: row; */
 
-  width: 100vw;
+  width: 90%;
   height: 100vh;
 
   background: #FBFCFE;
 }
-.App .dark-mode{
+
+.dark-mode{
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  /* flex-direction: row; */
 
   width: 100vw;
   height: 100vh;
 
   background: #282a36;
+}
+
+.login-page-top{
+  position: absolute;
+  top: 10%;
+  right: 10%;
 }
 
 .dark-mode form{
@@ -42,10 +56,14 @@ form{
 
 
 .custom-field{
-  width: 360px;
+  width: 50%;
+  max-width: 600px;
+  right: 5%;
+  /* margin-left: auto; */
   padding: 4rem 2rem;
   border-radius: 1rem;
   box-shadow: 0 10px 25px rgba(92, 99, 106, .2);
+  z-index: 10;
 }
 
 .form-title{
@@ -78,15 +96,19 @@ form{
 .form-button{
   display: block;
 
-  margin-left: auto;
-  padding: .75rem 2rem;
+  width: 16rem;
+  height: 4.5rem;
+
+  margin-top: 4rem;
+  /* margin-right: auto; */
+  /* padding: .75rem 2rem; */
   outline: none;
 
   background-color: var(--first-color);
   color: #fff;
 
   font-size: var(--normal-font-size);
-  border-radius: .5rem;
+  border-radius: 5rem;
   cursor: pointer;
   transition: .3s;
 
@@ -142,4 +164,16 @@ input[type="checkbox"]::before{
 
 input:checked[type="checkbox"]::before{
   left: 19px;
+}
+
+.login-image{
+  z-index: 1;
+  width: 60%;
+  height: 60%;
+}
+
+.form-button-register{
+  position: absolute;
+  bottom: 12%;
+  right: 38%;
 }
