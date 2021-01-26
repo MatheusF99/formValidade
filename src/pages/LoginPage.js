@@ -91,7 +91,7 @@ function LoginPage() {
 
                         <h1 className="form-title">Login</h1>
                     
-                        <div>
+                        <div className="input-field">
                             <Input type='email' placeholder=" " name="E-mail"/>
                             <Input type='password' placeholder=" " name="Password"/>
                         </div>		

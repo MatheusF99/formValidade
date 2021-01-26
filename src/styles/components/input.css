@@ -2,10 +2,11 @@
     position: relative;
     height: 48px;
     margin-bottom: 1.5rem;
+
+   
 }
 
 .form-input{
-    position: absolute;
 
     top: 0;
     left: 0;
