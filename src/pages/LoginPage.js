@@ -71,28 +71,24 @@ function LoginPage() {
     return (
         <div className="login-page">
             <div className={darkMode? 'dark-mode': 'light-mode'}>
-                
-                
-                <div className="landing-container">
-                    <img src={loginImage} className="login-image"/>
-                    {/* <div className='form-toggle'>
-                        <span className="form-icon">☀️</span>
-                        <span className="toggle">
-                            <input 
-                                checked={darkMode}
-                                onChange={()=>setDarkMode(prevMode=>!prevMode)}
-                                type="checkbox"
-                                id="checkbox"
-                            />
-                            <label htmlFor="checkbox"></label>
-                        </span>
-                        <span className="form-icon">🌙</span>
-                    </div> */}
-                </div>
-
                 <div className="form-container">
                     <Form ref={formRef} className="custom-field" onSubmit={handleSubmit}>
-                                            
+
+
+                        {/* <div className='form-toggle'>
+                            <span className="form-icon">☀️</span>
+                            <span className="toggle">
+                                <input 
+                                    checked={darkMode}
+                                    onChange={()=>setDarkMode(prevMode=>!prevMode)}
+                                    type="checkbox"
+                                    id="checkbox"
+                                />
+                                <label htmlFor="checkbox"></label>
+                            </span>
+                            <span className="form-icon">🌙</span>
+                        </div> */}
+
                         <h1 className="form-title">Login</h1>
                     
                         
