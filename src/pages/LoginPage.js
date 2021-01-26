@@ -91,9 +91,10 @@ function LoginPage() {
 
                         <h1 className="form-title">Login</h1>
                     
-                        
-                        <Input type='email' placeholder=" " name="E-mail"/>
-                        <Input type='password' placeholder=" " name="Password"/>				
+                        <div>
+                            <Input type='email' placeholder=" " name="E-mail"/>
+                            <Input type='password' placeholder=" " name="Password"/>
+                        </div>		
                         <button className='form-button' type='submit'>Sign In</button>
                         
                         <div className="social">
