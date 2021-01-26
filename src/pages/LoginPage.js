@@ -96,7 +96,8 @@ function LoginPage() {
                             <Input type='password' placeholder=" " name="Password"/>
                         </div>		
                         <button className='form-button' type='submit'>Sign In</button>
-                        
+                        <p className="sign-up-field">You don't have account ? <span>Sign Up</span></p>
+
                         <div className="social">
                             <p className="social-text">Or Sign In with social plataform</p>
                             <div className="social-midia">

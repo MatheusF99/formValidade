@@ -81,7 +81,7 @@ form{
 .form-button{
   display: block;
 
-  width: 150px;
+  width: 430px;
   height: 49px;
 
   margin: 0 auto 10px;
@@ -105,6 +105,12 @@ form{
 
 .form-button:hover{
   background-color: var(--first-color-ligth)
+}
+
+.sign-up-field{
+  width: 90%;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .social{
