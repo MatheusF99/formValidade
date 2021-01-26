@@ -1,4 +1,9 @@
 
+/* .login-page{
+  display: grid;
+  grid-template-columns: auto;
+} */
+
 .light-mode{
   position: relative;
   display: flex;
@@ -23,10 +28,23 @@ form{
   flex-direction: column;
 } */
 
+.landing-container{
+  width: 60%;
+  display: flex;
+  justify-content: center;
+
+
+  background: var(--first-color);
+
+  padding: 30px 0;
+  border-radius: 20px;
+
+}
+
 .custom-field{
-  width: 50%;
+
+  height: 80%;
   max-width: 600px;
-  right: 15%;
   /* margin-left: auto; */
   padding: 4rem 2rem;
   border-radius: 1rem;
@@ -64,7 +82,7 @@ form{
   width: 150px;
   height: 49px;
 
-  margin-top: 4rem;
+  margin: auto;
   /* margin-right: auto; */
   /* padding: .75rem 2rem; */
   outline: none;
@@ -87,10 +105,10 @@ form{
   background-color: var(--first-color-ligth)
 }
 
+
 .social-text{
   display: flex;
   justify-content: center;
-
 
   font-weight: 600;
   padding: .7rem 0;
@@ -204,6 +222,5 @@ input:checked[type="checkbox"]::before{
 /* --------------------------------------------- */
 
 .login-image{
-  width: 60%;
-  height: 60%;
+  max-width: 80%;
 }

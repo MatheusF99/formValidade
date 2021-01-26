@@ -4,6 +4,7 @@ import React, { useEffect, useRef } from 'react';
 import { Form } from '@unform/web'
 import Input from '../components/input';
 
+
 //style imports
 import '../styles/pages/loginPage.css'
 
@@ -71,47 +72,53 @@ function LoginPage() {
         <div className="login-page">
             <div className={darkMode? 'dark-mode': 'light-mode'}>
                 
-                {/* <img src={loginImage} className="login-image"/> */}
-                {/* <div className='form-toggle'>
-                    <span className="form-icon">☀️</span>
-                    <span className="toggle">
-                        <input 
-                            checked={darkMode}
-                            onChange={()=>setDarkMode(prevMode=>!prevMode)}
-                            type="checkbox"
-                            id="checkbox"
-                        />
-                        <label htmlFor="checkbox"></label>
-                    </span>
-                    <span className="form-icon">🌙</span>
-                </div> */}
                 
-                <Form ref={formRef} className="custom-field" onSubmit={handleSubmit}>
-                                        
-                    <h1 className="form-title">Login</h1>
-                   
-                    
-                    <Input type='email' placeholder=" " name="E-mail"/>
-                    <Input type='password' placeholder=" " name="Password"/>				
-                    <button className='form-button' type='submit'>Sign In</button>
-                    
-                    <p className="social-text">Or Sign In with social plataform</p>
-                    <div className="social-midia">
-                        <a href="#" className="social-icon">
-                            <i>i</i>
-                        </a>
-                        <a href="#" className="social-icon">
-                            <i>i</i>
-                        </a>
-                        <a href="#" className="social-icon">
-                            <i>i</i>
-                        </a>
-                        <a href="#" className="social-icon">
-                            <i>i</i>
-                        </a>
-                    </div>
-                </Form>
+                <div className="landing-container">
+                    <img src={loginImage} className="login-image"/>
+                    {/* <div className='form-toggle'>
+                        <span className="form-icon">☀️</span>
+                        <span className="toggle">
+                            <input 
+                                checked={darkMode}
+                                onChange={()=>setDarkMode(prevMode=>!prevMode)}
+                                type="checkbox"
+                                id="checkbox"
+                            />
+                            <label htmlFor="checkbox"></label>
+                        </span>
+                        <span className="form-icon">🌙</span>
+                    </div> */}
+                </div>
 
+                <div className="form-container">
+                    <Form ref={formRef} className="custom-field" onSubmit={handleSubmit}>
+                                            
+                        <h1 className="form-title">Login</h1>
+                    
+                        
+                        <Input type='email' placeholder=" " name="E-mail"/>
+                        <Input type='password' placeholder=" " name="Password"/>				
+                        <button className='form-button' type='submit'>Sign In</button>
+                        
+                        <div className="social">
+                            <p className="social-text">Or Sign In with social plataform</p>
+                            <div className="social-midia">
+                                <a href="#" className="social-icon">
+                                    <i>i</i>
+                                </a>
+                                <a href="#" className="social-icon">
+                                    <i>i</i>
+                                </a>
+                                <a href="#" className="social-icon">
+                                    <i>i</i>
+                                </a>
+                                <a href="#" className="social-icon">
+                                    <i>i</i>
+                                </a>
+                            </div>
+                        </div>
+                    </Form>
+                </div>
             </div>
         </div>
     );
